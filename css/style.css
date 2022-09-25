@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald|Roboto:ital,wght@1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #555555;
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #555555;
+    text-decoration: none;
+  }
+
+  #logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 20px;
+  }
+
+  #menu {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 3px;
+  }
+  
+  #logo, #menu {
+    line-height: 75px;
+  }
+  
+  #menu li {
+    float: right;
+    margin-right: 30px;
+  }
+  
+  #menu a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  #menu a:hover {
+    border-bottom: 2px solid #777777;
+  }
+  
+  .active {
+    border-bottom: 2px solid #777777;
+  }
+
+  #sock-img{
+    height: 500px;
+    width: 100%;
+    background: url("https://img.freepik.com/free-photo/new-socks-isolated-white_1203-2879.jpg?w=740&t=st=1663008669~exp=1663009269~hmac=7a071496af317214ae5bc49e31400fc7f10348f01d8ea076c4a346d3433dc0d7") no-repeat center center;
+  /* this one is to make animation move forwards*/
+    animation-name: sock-zoom;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    background-size: absolute;
+    right: 20%;
+  }
+
+  #sock-outer {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  @keyframes sock-zoom {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  #cover-text, #cover-text h2 {
+    color: #ffffff;
+  }
+  
+  #cover-text {
+    font-size: 140%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+    width:600px;
+    height: 100px;
+  
+    padding-top: 30px;
+    padding-left: 10px;
+  
+    /*background-color: rgba(10, 81, 236, 0.774);*/
+  
+    bottom: 30px;
+    right: 150px;
+  
+    position: absolute;
+    /* From https://css.glass */
+    background: rgba(216, 3, 3, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#reasons {
+  height: 600px;
+}
+
+#title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+#why-left {
+  padding-top: 30px;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+#how-right {
+  padding-top: 30px;
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+hr {
+  border-top: 1px solid #777777;
+  width: 100%;
+  margin: 5px 0;
+}
